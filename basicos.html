@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos JavaScript </title>
+</head>
+<body>
+<h1>Fundamentos JavaScript </h1>  
+<script>
+var hola ="Hola Mundo"
+let hello ="Hello Wold"
+console.log(hola)
+console.log(hello)
+console.log(window)
+console.log(window.hola)
+console.log(window.hello)
+//Ambito de bloque//
+console.log
+("********************var**************")
+var musica ="Rock";
+console.log("variable Musica antes del bloque",musica);
+
+var musica = "Pop"
+{ 
+console.log("variable Musica dentro del bloque",musica);
+}
+console.log("variable Musica despues del bloque",musica);
+
+console.log
+("********************let**************");
+
+let musica2 = "Rock";
+console.log("variable Musica antes del bloque",musica2);
+
+
+{
+let musica2 = "Pop"
+console.log("variable Musica dentro del bloque",musica2);
+}
+console.log("variable Musica despues del bloque",musica2);
+
+
+// let a;
+// const PI = 3.1416;
+// // const NUEVE;
+// console.log(PI);
+// // PI= 3.15
+
+// a="kenai"
+// console.log(a);
+
+
+// let objeto= {
+// nombre:"jon",
+// edad:35
+// }
+
+// const colores = ["blanco","negro","azul"];
+// console.log(objeto);
+// console.log(colores);
+//  objeto.correo = "jonmircha@gmail.com"
+//  colores.push("anaranjado")
+
+//  console.log(objeto)
+//  console.log(colores)
+
+
+//  //cadela de tezto strings
+//  let nombre = "jon";
+//  let apellido = 'Mircha';
+//  let saludo = new String("Hola mundo");
+//  let lorem = "       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, et dolorum. Adipisci sequi, voluptates accusamus earum magnam non pariatur odit consequuntur dicta modi. Quam soluta aliquid nam ea quod dolore."
+//  console.log(nombre,apellido,saludo);
+//   console.log(
+// nombre.length,
+// apellido.length,
+// saludo.length,
+// nombre.toUpperCase(),
+// apellido.toLowerCase(),
+// lorem.includes("amet"),
+// lorem.includes("jon"),
+// lorem,
+// lorem.trim(),
+// lorem.split(" "),
+// lorem.split(","), 
+// );
+
+let nombre = "jon";
+let apellido = "Mircha"
+
+//concatenacion
+let saludo = "Hola mi nombre es " + nombre + " " + apellido + "."
+console.log(saludo)
+
+//interpolacion de variales
+//template string
+let saludo2 = `Hola mi nombre es ${nombre} ${apellido}.`;
+console.log(saludo2)
+
+let ul= "<ul><li>primadera</li><li>otonio</li><li>verano</li><li>invierno</li></ul>" 
+console.log(ul)
+
+let ul2 = `
+<ul>  
+<li>primadera</li>
+<li>otonio</li>
+<li>verano</li>
+<li>invierno</li>
+</ul>`
+console.log(ul2)
+let ul3 ="<ul>"
+ul3 += "<li>primadera</li>"
+ul3 += "<li>otonio</li>"
+ul3 += "<li>verano</li>"
+ul3 += "<li>invierno</li>"
+ul3 +="</ul>"
+console.log(ul3)
+
+let a = 2;
+let b = new Number(1);
+let c = 7.19
+ 
+
+console.log(a,b);
+ console.log(c.toFixed(1));
+ console.log(c.toFixed(5));
+console.log(parseInt(c));
+console.log(parseFloat(c));
+</script>
+</body>
+</html>
